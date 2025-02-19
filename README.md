@@ -8,7 +8,7 @@ This repository is designed to transcribe videos into a legible output with time
 
 ***MacOS/Linux***
 *Step 1*
-```shell
+```bash
 
 ```
 
