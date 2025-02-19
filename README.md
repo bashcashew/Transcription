@@ -9,19 +9,23 @@ This repository is designed to transcribe videos into a legible output with time
 ***MacOS/Linux***
 *Step 1*
 ```bash
-
+python -m venv venv
+```
+*Step 2*
+```bash
+source venv/bin/activate
 ```
 
 
 
 ***Windows***
-*Step 1*
+*Step 1: Any should work but worked with python 3.12*
 ```shell
-python3.12 -m venv venv
+python -m venv venv
 ```
 *Step 2*
 ```shell
-source venv/bin/activate
+venv\Scripts\activate
 ```
 *Step 3*
 ```shell
