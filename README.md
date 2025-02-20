@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 *Step 4:*
 ```bash
-python transcription.py
+python Transcription.py
 ```
 
 
@@ -54,24 +54,19 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
-*Step 3:*
-```shell
-pip install -r requirements.txt
-```
-
-*Step 4: To deactivate, simply type* 
+*Step 3: To deactivate, simply type* 
 ```shell
 deactivate
 ```
 
-*Step 5:*
+*Step 4:*
 ```shell
 pip install -r requirements.txt
 ```
 
-*Step 6:*
+*Step 5:*
 ```shell
-python transcription.py
+python Transcription.py
 ```
 
 
