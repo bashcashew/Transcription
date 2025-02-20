@@ -8,18 +8,18 @@ This repository is designed to transcribe videos into a legible output with time
 
 ***MacOS/Linux***
 
-*Step 0*
+*Step 0:*
 ```bash
 git clone https://github.com/bashcashew/Transcription
 cd Transcription
 ```
 
-*Step 1*
+*Step 1:*
 ```bash
 python -m venv venv
 ```
 
-*Step 2*
+*Step 2:*
 ```bash
 source venv/bin/activate
 ```
@@ -38,7 +38,7 @@ python transcription.py
 
 ***Windows***
 
-*Step 0*
+*Step 0:*
 ```shell
 git clone https://github.com/bashcashew/Transcription
 cd Transcription
@@ -49,12 +49,12 @@ cd Transcription
 python -m venv venv
 ```
 
-*Step 2*
+*Step 2:*
 ```shell
 venv\Scripts\activate
 ```
 
-*Step 3*
+*Step 3:*
 ```shell
 pip install -r requirements.txt
 ```
