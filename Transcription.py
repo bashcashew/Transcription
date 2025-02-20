@@ -83,7 +83,7 @@ def transcribe_audio_chunks(chunks):
         #' Chunk .wav sav for transcribing each partition
         chunk.export("temporarily_chunky.wav", format="wav")
         #' Loading the chunky and transcribing
-        result = model.transcribe("temporarily_chunky.wav")
+        result = model.transcribe("temporarily_chunky.wav", fp16 = False) #' Gives error on arch.. fp32 is suuitable unless soft-error occurs with "False"
         sentences = re.split(r'(?<=[.!?]) +', result['text'])
         for sentence in sentences:
             sentence = sentence.strip()
@@ -170,3 +170,5 @@ def process_audio_video():
 if __name__ == "__main__":
     process_audio_video()
 #' ---------------------------------------------------------------
+
+
