@@ -103,7 +103,7 @@ def transcribe_audio_chunks(chunks):
 
 #' ---------------------------------------------------------------
 #' Dictonary override for the phrases and/or replacements needed
-def apply_custom_corrections(text):
+def custom_corrections(text):
     for incorrect, correct in custom_dictionary.items():
         text = re.sub(re.escape(incorrect), correct, text, flags=re.IGNORECASE)
     return text
@@ -154,7 +154,7 @@ def process_audio_video():
     raw_transcription = transcribe_audio_chunks(chunks)
     print("Transcription complete!\nNow correcting and formatting...")
     #' Apply custom corrections
-    corrected_transcription = apply_custom_corrections(raw_transcription)
+    corrected_transcription = custom_corrections(raw_transcription)
     print("Transcription corrected and formatted.")
     #' Save to a text file
     with open(output_file, 'w') as f:
